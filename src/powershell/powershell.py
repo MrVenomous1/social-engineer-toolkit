@@ -16,8 +16,9 @@ from src.core.menu import text
 
 # Py2/3 compatibility
 # Python3 renamed raw_input to input
+
 try:
-    input = raw_input
+    raw_input = input #fixes raw input is not defined error
 except NameError:
     pass
 
